@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 09 Nov 2017 pada 15.16
+-- Generation Time: 14 Nov 2017 pada 16.37
 -- Versi Server: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -66,6 +66,16 @@ CREATE TABLE `iklan` (
   `email_iklan` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `iklan`
+--
+
+INSERT INTO `iklan` (`id_iklan`, `id_member`, `judul_iklan`, `detail_iklan`, `no_hp_iklan`, `email_iklan`) VALUES
+(1, 1, 'Ayam Ayaman', 'Ini Ayam Ayaman', '08999999999', 'tokoayambagus@gmail.com'),
+(2, 5, 'aaaa', 'asassas', '123123123', 'qweqweq@ggnGg'),
+(3, 5, 'aaa', 'aaa', '312312', 'qweqweqw'),
+(4, 5, 'xxxx', 'xxxxx', '2342343', 'rtrttrtrtr');
+
 -- --------------------------------------------------------
 
 --
@@ -75,11 +85,23 @@ CREATE TABLE `iklan` (
 CREATE TABLE `member` (
   `id_member` int(11) NOT NULL,
   `username` varchar(30) NOT NULL,
+  `nama` varchar(50) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `password` varchar(20) NOT NULL,
+  `password` varchar(50) NOT NULL,
   `nohp` varchar(12) NOT NULL,
   `foto` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `member`
+--
+
+INSERT INTO `member` (`id_member`, `username`, `nama`, `email`, `password`, `nohp`, `foto`) VALUES
+(1, 'fernanda', '', 'fajri.fernanda10@gmail.com', 'f5775818dcc2cfa6e59bfdadfe25d327', '081372141269', ''),
+(2, 'member1', '', 'member@gmail.com', 'member', '098877889891', ''),
+(3, 'tes', 'tes', 'tes@gmail.com', '8f60c8102d29fcd525162d02eed4566b', '556677', ''),
+(4, 'tessss', 'tes', 'tes@gmail.com', '79b7cdcd14db14e9cb498f1793817d69', '556677', ''),
+(5, 'coba', 'cobaa', 'coba@gmail.com', 'aa08769cdcb26674c6706093503ff0a3', '0988877666', '');
 
 --
 -- Indexes for dumped tables
@@ -129,12 +151,12 @@ ALTER TABLE `gambar`
 -- AUTO_INCREMENT for table `iklan`
 --
 ALTER TABLE `iklan`
-  MODIFY `id_iklan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_iklan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
-  MODIFY `id_member` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_member` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --

@@ -38,6 +38,10 @@
      $query = "SELECT * FROM member";
      return $this->execute($query);
    }
+   function insertIklan($iduser,$judul,$deskripsi,$nohp,$email){
+     $query = "INSERT INTO `iklan` (`id_iklan`, `id_member`, `judul_iklan`, `detail_iklan`, `no_hp_iklan`, `email_iklan`) VALUES ( NULL,'$iduser','$judul','$deskripsi','$nohp','$email');";
+     return $this->execute($query);
+   }
    function fetch($query){
      return mysqli_fetch_row($query);
    }

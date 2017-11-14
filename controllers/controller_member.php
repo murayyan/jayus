@@ -41,5 +41,19 @@ class controller_member {
 		function viewRegister(){
 			include "views/viewsMember/register.php";
 		}
+
+		function buatIklan(){
+			include "views/viewsMember/buatIklan.php";
+		}
+
+		function insert($id){
+			$iduser = $id;
+			$judul= $_POST['judul'];
+			$deskripsi = $_POST['deskripsi'];
+			$nohp= $_POST['nohp'];
+			$email= $_POST['email'];
+			$insert = $this->modelMember->insertIklan($iduser,$judul,$deskripsi,$nohp,$email);
+			header("location:index.php?memberIklan");
+		}
 }
 ?>

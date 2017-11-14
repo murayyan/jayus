@@ -33,6 +33,9 @@ if(isset($_SESSION['usernameAdmin'])){
 		else if(isset($_GET['memberLogout'])){
 			$controllerMember->logout();
 		}
+		else if(isset($_GET['buatIklan'])){
+			$controllerMember->buatIklan();
+		}
 	}
 	else if(!isset($_SESSION['usernameAdmin']) && !isset($_SESSION['usernameMember'])){
 		if (isset($_GET['login'])){

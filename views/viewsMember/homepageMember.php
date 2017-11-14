@@ -44,10 +44,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                   <li class="active">
-                      <a href="?memberIklan" ><i class="fa fa-fw fa-table"></i> Data Iklan</a>
+                      <a href="?memberIklan" ><i class="fa fa-fw fa-table"></i> Data Iklan </a>
                   </li>
 									<li class="">
-                      <a href="?profil" ><i class="fa fa-fw fa-table"></i> Data Member</a>
+                      <a href="?buatIklan" ><i class="fa fa-fw fa-table"></i> Buat Iklan </a>
                   </li>
 									<li>
 										<a href='http://localhost/jayus/index.php?memberLogout'><i class="fa fa-fw fa-logout"></i> Logout</a>
