@@ -11,13 +11,13 @@
     <title>Dashboard Member</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="http://localhost/belagu/mvcadmin/views/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/belagu/mvcmember/views/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="http://localhost/belagu/mvcadmin/views/css/sb-admin.css" rel="stylesheet">
+    <link href="http://localhost/jayus/views/viewsMember/dashboard.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="http://localhost/belagu/mvcadmin/views/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost/belagu/mvcmember/views/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
 </head>

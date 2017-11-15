@@ -8,7 +8,7 @@
     <link href="http://localhost/belagu/mvcmember/views/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="http://localhost/belagu/mvcadmin/views/css/sb-admin.css" rel="stylesheet">
+    <link href="http://localhost/jayus/views/viewsMember/dashboard.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://localhost/belagu/mvcmember/views/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Halo <?php ob_start(); echo $_SESSION['usernameMember'];?></a>
+                <a class="navbar-brand" href="index.html">Halo Member : <?php ob_start(); echo $_SESSION['usernameMember'];?></a>
             </div>
 
 
@@ -53,7 +53,7 @@
                       <a href="?memberIklan" ><i class="fa fa-fw fa-table"></i> Data Iklan </a>
                   </li>
 									<li class="active" >
-                      <a href="index.php?i=<?=$_SESSION['ID']?>" ><i class="fa fa-fw fa-edit"></i> Bikin Iklan</a>
+                      <a href="?buatIklan" ><i class="fa fa-fw fa-edit"></i> Bikin Iklan</a>
                   </li>
 									<li>
 										<a href='index.php?memberLogout'><i class="fa fa-fw fa-logout"></i> Logout</a>
@@ -98,7 +98,7 @@
                         </h1>
                         <ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i>  <a href="">Member</a>
+                                <i class="fa fa-dashboard"></i> <?php echo $_SESSION['usernameMember'] ?>
                             </li>
                             <li class="active">
                                 <i class="fa fa-table"></i> Buat Iklan
